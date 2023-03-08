@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Page</title>
+
+  <style>
+    body {background-color: aquamarine;}
+    div {
+      width: 400px;
+      height: auto;
+      padding: 35px;
+      border: 2px solid red;
+      background-color: aqua;
+      border-radius: 10px;
+    }
+    .left {
+      float: left;
+    }
+    .right {
+      float: right;
+    }
+    button {
+      padding: 5px;
+      width: 150px;
+    }
+  </style>
+</head>
+<body>
+<center><p>SideHustle Internship 7.0 Task for week 1</p>
+
+    <div>
+      <form id="form">
+        <h2>Registration Page</h2>
+
+        <label class="left" for="name">Full Name:</label>
+        <input class="right" type="text" placeholder="Enter your name" required><br><br>
+        
+        <label class="left" for="email">Email:</label>
+        <input class="right" type="email" placeholder="Enter your email address" required><br><br>
+        
+        <label class="left" for="phone">Phone Number:</label>
+        <input class="right" type="phone" placeholder="Phone Number" required><br><br>
+
+        <label class="left" for="gender" required>Gender:</label>
+        <input type="radio" value="male" />Male
+        <input type="radio" value="female" />Female
+        <br><br>
+        
+        <label class="left" for="password">Password:</label>
+        <input class="right" type="password" placeholder="Enter Password" required><br><br>
+        
+        <br><br>
+        <center><button type="submit" onclick='submitTask'>Submit</button></center>
+      </form>  
+    </div>
+    <br><br><br><br>
+</center>
+    <center><footer><p>Designed By ABEYJOE @copy; 2023</p></footer></center>  
+
+    <script>
+      function submitTask () {
+        document.getElementById("form").window.alert("Task submited successfully");
+      }
+    </script>
+</body>
+</html>
